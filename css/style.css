@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2019-12-12, 23:00:39
+    Author     : Piotr
+*/
+body {
+  position: relative;
+  min-height: 100vh; }
+
+.quote {
+  display: block;
+  text-align: center;
+  margin: 10px 10px 10px 10px; }
+
+.logo {
+  border: 2px solid black;
+  margin: 10px 10px 10px 30px; }
+
+.menu {
+  padding: 20px;
+  margin: 10px 10px 10px 10px;
+  border: 2px solid black;
+  overflow: hidden;
+  min-width: 400px;
+  max-height: 80px; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  ul li a {
+    display: inline-block;
+    font-size: 100%;
+    border-radius: 13px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    float: right;
+    white-space: nowrap;
+    text-decoration: none;
+    box-sizing: border-box; }
+
+.content {
+  margin: 150px 150px 0px 100px;
+  padding-bottom: 200px; }
+  .content .content_headline {
+    margin: auto;
+    border: 2px solid black;
+    width: 80%;
+    min-height: 100px;
+    min-width: 100px;
+    flex: 5 0 0;
+    display: block;
+    text-align: center; }
+
+footer {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  min-height: 5%;
+  border: 2px solid black;
+  bottom: 0%; }
+
+div {
+  font-size: 50px;
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
