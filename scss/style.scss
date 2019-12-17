@@ -1,96 +1,154 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2019-12-12, 23:00:39
-    Author     : Piotr
-*/
-body
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    
+    
+}
+.box
 {
-    position: relative;
-    min-height: 100vh;
+    
+    background: linear-gradient(180deg, rgba(255,255,255,1) 7%, rgba(255,255,255,1) 17%, rgba(31,59,65,0) 100%),
+        url("../portfolio_assets/background.jpg");
+    ground-blend-mode: screen, difference, lighten;
+ 
+    background-size: cover;
+    
 }
 .quote
-    {
-        display: block;
-        text-align: center;
-        margin: 10px 10px 10px 10px;
-    }
-    .logo
-    {
-        border: 2px solid black;
-        margin: 10px 10px 10px 30px;
-    }
-    .menu
-    {
-        padding: 20px;
-        margin: 10px 10px 10px 10px;
-        border: 2px solid black;
-        overflow: hidden;
-        min-width: 400px;
-        max-height: 80px;
-    }
-    ul
-    {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        
-        
-        li
-        {
-            
-            a
-            {
-                display: inline-block;
-                font-size: 100%;
-                border-radius: 13px;
-                border: 2px solid black;
-                text-align: center;
-                margin: 10px 10px 10px 10px;
-                padding: 10px;
-                float: right;
-                white-space: nowrap;
-                text-decoration: none;
-                box-sizing: border-box;
-            }
-        }
-        
-    }
-    .content
-    {
-        margin: 150px 150px 0px 100px ;
-        padding-bottom: 200px;
-        .content_headline
-        {
+{
+    margin-top: 30px;
+    font-family: 'Fredericka the Great', cursive;
+    color: rgb(210,210,210);
+    
+}
+.Portfolio
+{
+    font-family: 'Fredericka the Great';
+    color: rgb(170,170,170);
+    font-size: 50px;
+    text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
+}
 
+#logo
+{
+    float: right;
+    opacity: 0.8;
+    &:hover
+        {
+        opacity: 1;
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+}
+.frontend, .backend, .other
+{
+    position: relative;
+    border-radius: 20px;
+    z-index: 3 !important;
+    opacity: 0.6;
+    .logo:hover
+    {
+        opacity: 1;
+        cursor: pointer;
+        
 
-            margin: auto;
-            border: 2px solid black;
-            width: 80%;
-            min-height: 100px;
-            min-width: 100px;
-            flex: 5 0 0;
-            display: block;
-            text-align: center;
-        }   
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
     }
     
-    footer
-    {
-        position: absolute;
-        
-        display: inline-block;
-        width: 100%;
-        min-height: 5%;
-        border: 2px solid black;
-        
-        bottom: 0%;
-    }
-div
+        }
+        @-webkit-keyframes pulse {
+        0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        }
+        50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+        }
+        100% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+        }
+        }
+        @keyframes pulse {
+        0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        }
+        50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+        }
+        100% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+        }
+        } 
+
+
+
+ 
+
+@media (max-width: 767px)
 {
-    font-size: 50px;
-    font-weight: bold;
+    #logo, #title
+    {
+        width: 50%;
+        margin-right: 25%;
+        margin-left: 25%;
+        
+       
+        
+       
+    }
+}
+li
+{
+    white-space: nowrap;
+}
+h1
+{
+    font-size: 90%;
+}
+nav
+{
+    background-color: purple;
+    border-radius: 0px 13px 13px 0px;
+}
+.hidden_content
+{
+    position: absolute;
+    left: 160px;
+    width: 60%;
+    height: 74%;
+    margin-top: -195px;
+    margin-right: 30%;
+    background-color: #dbe2e8;
+    border-radius: 0px 30px 30px 0;
+    float: right;
+    z-index: 0;
+    
+    &#frontend_content
+    {
+         display: none;
+    }
+    &#backend_content
+    {
+         top: 213px;
+         display: none;
+    }
+    &#other_content
+    {
+         top: 217px;
+         display: none;
+    }
 }
